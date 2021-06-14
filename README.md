@@ -1,3 +1,3 @@
 # Code-Highlighter-Sample
 
-(Highlightjs)[/highlightjs.html]
+[Highlightjs](/highlightjs.html)
