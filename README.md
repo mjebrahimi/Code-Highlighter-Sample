@@ -1,3 +1,4 @@
 # Code-Highlighter-Sample
 
-[Highlightjs](/highlightjs.html)
+- [Highlight.js Demo](/highlightjs.html)
+- [Prism.js Demo](/prismjs.html)
