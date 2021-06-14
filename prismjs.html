@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" />
+        <link rel="prefetch alternate stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-coy.min.css" />
+        <link rel="prefetch alternate stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" />
+        <link rel="prefetch alternate stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-funky.min.css" />
+        <link rel="prefetch alternate stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-okaidia.min.css" />
+        <link rel="prefetch alternate stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-solarizedlight.min.css" />
+        <link rel="prefetch alternate stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css" />
+        <link rel="prefetch alternate stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-twilight.min.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" /></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-csharp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-json.min.js"></script>
+    </head>
+    <body>
+
+        <select id="theme-dropdown">
+            <option value="prism.min.css">prism.min.css</option>
+            <option value="prism-coy.min.css">prism-coy.min.css</option>
+            <option value="prism-dark.min.css">prism-dark.min.css</option>
+            <option value="prism-funky.min.css">prism-funky.min.css</option>
+            <option value="prism-okaidia.min.css">prism-okaidia.min.css</option>
+            <option value="prism-solarizedlight.min.css">prism-solarizedlight.min.css</option>
+            <option value="prism-tomorrow.min.css">prism-tomorrow.min.css</option>
+            <option value="prism-twilight.min.css">prism-twilight.min.css</option>
+        </select>
+        
+        <pre>
+            <code class="language-csharp">
+using System.IO.Compression;
+
+#pragma warning disable 414, 3021
+#region Test
+
+namespace MyApplication
+{
+    [Obsolete(&quot;متن فارسی&quot;)]
+    class Program : IInterface
+    {
+        public static List&lt;int&gt; JustDoIt(this int count, DateTimeOffset datetime)
+        {
+            // Less than 2 hours ago.
+            const int Second = 1;
+            var bool = trues is false;
+            Span&lt;int&gt; numbers = stackalloc int[length];
+            Console.WriteLine($&quot;Hello سلام {Name}!&quot;);
+            return new List&lt;int&gt;(new int[] { 1, 2, 3 }).Where&lt;int&gt;(p =&gt; p != 0).Select(p =&gt; p).ToList();
+        }
+    }
+}
+            </code>
+        </pre>
+        
+        <pre>
+            <code class="language-json">
+{
+    "IsSuccess": "false",
+    "Message": "An error occurred"
+}
+            </code>
+        </pre>
+
+        <ul>
+            <li><a href="https://prismjs.com/index.html">https://prismjs.com/index.html</a></li>
+            <li><a href="https://prismjs.com/download.html">https://prismjs.com/download.html</a></li>
+            <li><a href="https://github.com/PrismJS/prism">https://github.com/PrismJS/prism</a></li>
+            <li><a href="https://cdnjs.com/libraries/prism">https://cdnjs.com/libraries/prism</a></li>
+            <li><a href=" https://prismjs.com/plugins/line-highlight/"> https://prismjs.com/plugins/line-highlight/</a></li>
+            <li><a href="https://prismjs.com/plugins/line-numbers/">https://prismjs.com/plugins/line-numbers/</a></li>
+            <li><a href="https://prismjs.com/plugins/autolinker/">https://prismjs.com/plugins/autolinker/</a></li>
+            <li><a href="https://prismjs.com/plugins/file-highlight/">https://prismjs.com/plugins/file-highlight/</a></li>
+            <li><a href="https://prismjs.com/plugins/jsonp-highlight/">https://prismjs.com/plugins/jsonp-highlight/</a></li>
+            <li><a href="https://prismjs.com/plugins/autoloader/">https://prismjs.com/plugins/autoloader/</a></li>
+            <li><a href="https://prismjs.com/plugins/normalize-whitespace/">https://prismjs.com/plugins/normalize-whitespace/</a></li>
+            <li><a href="https://prismjs.com/plugins/copy-to-clipboard/">https://prismjs.com/plugins/copy-to-clipboard/</a></li>
+            <li><a href="https://prismjs.com/plugins/toolbar/">https://prismjs.com/plugins/toolbar/</a></li>
+            <li><a href="https://prismjs.com/plugins/match-braces/">https://prismjs.com/plugins/match-braces/</a></li>
+            <li><a href="https://prismjs.com/plugins/diff-highlight/">https://prismjs.com/plugins/diff-highlight/</a></li>
+        </ul>
+
+        <script>
+            function init() {
+                var dropdown = document.getElementById("theme-dropdown");
+                setTheme(dropdown.value);
+        
+                dropdown.addEventListener('change', e => {
+                    setTheme(dropdown.value);
+                });
+            }
+        
+            function setTheme(style){
+                for (let link of document.querySelectorAll('link')) {
+                    link.rel = 'stylesheet';
+                    link.disabled = !link.href.match(style);
+                }
+            }
+          
+            addEventListener('load', init);
+          </script>
+          
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
